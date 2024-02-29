@@ -14,4 +14,8 @@ router.post("/product/add", async (req, res) => {
   return res.status(201).send({ message: "Product is added successfully." });
 });
 
+router.get("/product/list", (req, res) => {
+  return res.status(200).send("Getting product list..");
+});
+
 export default router;
